@@ -299,13 +299,14 @@ where brand_name='SS';
 delete from products
 where product_name='smart_cooler';
 
-
-
-
-
-
-
-
-
-
-
+--STRINGS
+select student_id,concat(student_name,' = ',email) from students;	--conactenation
+select substr('tauf@gmail.com',5,6) from students;   				--substring--
+select length(email) from students; 								--length--
+select replace(email,'tauf','hayat') from students; 				--Replace--
+select reverse('tauf@gmail.com') from students;     				--reverse--
+select lower(email) from students; 									--lower
+select upper(email) from students;									--upper
+select left(email,7) from students; 								--left
+select right('tauf@gmail.com',7) from students; 					--right
+select trim(email) from students;									--Trim
